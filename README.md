@@ -6,7 +6,7 @@ InfoDB is a Information crawler and extraction tool for retreiving and storing i
 
 ### Installation
 
-InfoDB requires [java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) to run.
+InfoDB requires [java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) to run. <br/>
 Step 1. Install Java 8 <br/>
 Step 2. Install Maven 3+ <br/>
 Step 2. Install MongoDB <br/>

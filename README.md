@@ -4,7 +4,7 @@
 
 InfoDB is a Information crawler and extraction tool for retreiving and storing information about people from the internet.
 
-![alt text](https://raw.githubusercontent.com/mdakram28/infodb/master/docs/architecure.png)
+[Architecture](https://raw.githubusercontent.com/mdakram28/infodb/master/docs/architecure.png)
 
 ### Installation
 

@@ -7,12 +7,12 @@ InfoDB is a Information crawler and extraction tool for retreiving and storing i
 ### Installation
 
 InfoDB requires [java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) to run.
-Step 1. Install Java 8
-Step 2. Install Maven 3+
-Step 2. Install MongoDB
-Step 3. Install [chromedriver and chrome](https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/)
-Step 4. Clone InfoDB repository
-Step 5. Install Maven depdendencies and build
+Step 1. Install Java 8 <br/>
+Step 2. Install Maven 3+ <br/>
+Step 2. Install MongoDB <br/>
+Step 3. Install [chromedriver and chrome](https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/) <br/>
+Step 4. Clone InfoDB repository <br/>
+Step 5. Install Maven depdendencies and build <br/>
 ```sh
 $ cd infodb                 # Go into project directory
 $ mvn install               # Install maven depdency, build jar, test

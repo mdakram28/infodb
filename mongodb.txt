@@ -1,0 +1,14 @@
+use infodb;
+db.createCollection("info");
+db.info.createIndex({
+	"title": "text",
+	"raw.name": "text",
+	"raw.Other names": "text",
+	"raw.login": "text"
+})
+db.info.createIndex({
+	"title": 1,
+	"toolName": 1 
+}, {
+	unique: true
+})

@@ -2,17 +2,12 @@ package com.mdakram28.infodb.api;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.io.PrintWriter;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.stream.Collectors;
 
-import javax.validation.ReportAsSingleViolation;
-
 import org.apache.commons.collections4.ListUtils;
-import org.mockito.internal.util.collections.ListUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,13 +20,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 
 import com.mdakram28.infodb.InfoList;
 import com.mdakram28.infodb.datamanager.DataManager;
-
-import edu.emory.mathcs.backport.java.util.LinkedList;
-import edu.emory.mathcs.backport.java.util.Queue;
 
 @Controller
 public class MainController {

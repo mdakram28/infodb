@@ -1,18 +1,9 @@
 package com.mdakram28.infodb.tools.nosqldb;
 
 import java.util.List;
-import java.util.concurrent.Future;
 
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Scope;
 import org.springframework.core.annotation.Order;
-import org.springframework.data.mongodb.MongoDbFactory;
-import org.springframework.data.mongodb.core.convert.DbRefResolver;
-import org.springframework.data.mongodb.core.convert.DefaultDbRefResolver;
-import org.springframework.data.mongodb.core.convert.MappingMongoConverter;
-import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Component;
 
 import com.mdakram28.infodb.Info;
@@ -48,6 +39,4 @@ public class NosqlDbStore implements IDataSource, IDataSink {
 			infoDAO.insertDocument(info);
 		}
 	}
-
-
 }

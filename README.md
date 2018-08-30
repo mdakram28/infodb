@@ -4,6 +4,8 @@
 
 InfoDB is a Information crawler and extraction tool for retreiving and storing information about people from the internet.
 
+![alt text](https://raw.githubusercontent.com/mdakram28/infodb/master/docs/architecure.png)
+
 ### Installation
 
 InfoDB requires [java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) to run. <br/>

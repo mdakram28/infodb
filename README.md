@@ -1,5 +1,7 @@
 # InfoDB
 
+[![Build Status](https://travis-ci.org/mdakram28/infodb.svg?branch=master)](https://travis-ci.org/mdakram28/infodb)
+
 InfoDB is a Information crawler and extraction tool for retreiving and storing information about people from the internet.
 
 ### Installation

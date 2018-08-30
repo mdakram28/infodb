@@ -44,19 +44,30 @@ The application can be configured by supplying the following variables in proper
 
 <EndpointClassName>.enabled default value is true
 
+Properties file:
+- src/main/resources/application.properties : Default profile (for development only)
+- src/main/resources/application-prod.properties : Production profile (activate during production run)
+
+To activate the production properties pass -Dspring.profiles.active=prod at runtime
+
 ### Running
 
+##### Run with development properties
 ```sh
 $ cd infodb                 # Go into project directory
 $ # build by running 'mvn install' if required
 $ java -jar target/infodb-0.0.1-SNAPSHOT.jar
 ```
+##### Run with production properties
+```sh
+$ java -Dspring.profiles.active=prod -jar target/infodb-0.0.1-SNAPSHOT.jar
+```
 
 In order to override these properties during runtime write the properties in a file and provide the relative path of the file as below
-
 ```sh
 $ java -Dspring.config.location=<relative/path/to/application.properties> -jar target/infodb-0.0.1-SNAPSHOT.jar
 ```
+
 
 ### Usage
 

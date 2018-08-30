@@ -35,10 +35,14 @@ The application can be configured by supplying the following variables in proper
 | spring.data.mongodb.port | MonogDB Port | 27017 |
 | spring.data.mongodb.database | MongoDB Database name | infodb |
 | NosqlDbStore.enabled | Enable or Disable MongoDB | true/false |
-| GoogleScraper.enabled | Enable or Disable Google Scraper | false |
-| GithubAPI.enabled | Enable or Disable Github API client | false |
-| PersonExtractor.enabled | Enable or Disable Person Knowledge Engine | false |
+| GoogleScraper.enabled | Enable or Disable Google Scraper | true/false |
+| GithubAPI.enabled | Enable or Disable Github API client | true/false |
+| PersonExtractor.enabled | Enable or Disable Person Knowledge Engine | true/false |
+| <EndpointClassName>.enabled | Enable or Disable DataEndpoint | true/false |
 | titlediff_threshold | Threshold of difference in found title and queried title | 0 - MAX_INT |
+| infofetch_batchsize | Batch size to process the names | 1 - MAX_INT |
+
+<EndpointClassName>.enabled default value is true
 
 ### Running
 

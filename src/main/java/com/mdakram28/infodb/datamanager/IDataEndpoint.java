@@ -6,6 +6,7 @@ public interface IDataEndpoint {
 		public static final String CACHE = "CACHE";
 		public static final String SCRAPER = "SCRAPER";
 		public static final String API = "API";
+		public static final String CRAWLER = "CRAWLER";
 	}
 	
 	public String getType();

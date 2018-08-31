@@ -42,11 +42,11 @@ The application can be configured by supplying the following variables in proper
 | GoogleScraper.enabled | Enable or Disable Google Scraper | true/false |
 | GithubAPI.enabled | Enable or Disable Github API client | true/false |
 | PersonExtractor.enabled | Enable or Disable Person Knowledge Engine | true/false |
-| <EndpointClassName>.enabled | Enable or Disable DataEndpoint | true/false |
+| &lt;EndpointClassName&gt;.enabled | Enable or Disable DataEndpoint | true/false |
 | titlediff_threshold | Threshold of difference in found title and queried title | 0 - MAX_INT |
 | infofetch_batchsize | Batch size to process the names | 1 - MAX_INT |
 
-<EndpointClassName>.enabled default value is true
+&lt;EdpointClassName&gt;.enabled default value is true
 
 Properties file:
 - src/main/resources/application.properties : Default profile (for development only)

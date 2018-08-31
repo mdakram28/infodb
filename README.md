@@ -58,8 +58,10 @@ To activate the production properties pass -Dspring.profiles.active=prod at runt
 
 ##### Run with development properties
 ```sh
-$ cd infodb                 # Go into project directory
+$ cd infodb                 	# Go into project directory
 $ # build by running 'mvn install' if required
+$ chromedriver			# Run chrome driver
+$ mongod			# Run mongodb server
 $ java -jar target/infodb-0.0.1-SNAPSHOT.jar
 ```
 ##### Run with production properties

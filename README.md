@@ -69,7 +69,7 @@ $ java -Dspring.profiles.active=prod -jar target/infodb-0.0.1-SNAPSHOT.jar
 
 In order to override these properties during runtime write the properties in a file and provide the relative path of the file as below
 ```sh
-$ java -Dspring.config.location=&lt;relative/path/to/application.properties&gt; -jar target/infodb-0.0.1-SNAPSHOT.jar
+$ java -Dspring.config.location=<relative/path/to/application.properties> -jar target/infodb-0.0.1-SNAPSHOT.jar
 ```
 
 
@@ -86,7 +86,7 @@ GET     /details/person
             raw data and interpreted data as json
         Response Format: 
             {
-                "key": "&lt;Requested query string&gt;"
+                "key": "<Requested query string>"
                 "data": [Array of raw data]
                 "info": [Array of interpreted information]
             }
@@ -102,7 +102,7 @@ POST    /details/multiple
             2       Stephen Hawkings    1
             ...
             ...
-            &lt;index&gt; <Name>              <Number of sources>
+            <index> <Name>              <Number of sources>
 ```
 
 ### Test

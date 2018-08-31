@@ -21,7 +21,7 @@ import com.mdakram28.infodb.InfoList;
 import com.mdakram28.infodb.datamanager.IDataSource;
 
 @Component
-@Order(value = 3)
+@Order(value = 2)
 public class GithubAPI implements IDataSource{
 
 	Logger logger = LoggerFactory.getLogger(this.getClass());

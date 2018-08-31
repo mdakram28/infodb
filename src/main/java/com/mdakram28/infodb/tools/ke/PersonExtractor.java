@@ -37,19 +37,37 @@ public class PersonExtractor implements IKnowledgeEngine {
 				return;
 			Map<String, Object> raw = info.getRaw();
 			if (raw.get("Personal Information") != null) {
-				Map<String, Object> po = m.convertValue(raw.get("Personal Information"), Map.class);
-				raw.putAll(po);
+				try {
+					Map<String, Object> po = m.convertValue(raw.get("Personal Information"), Map.class);
+					raw.putAll(po);
+				} catch (Exception e) {
+				}
 			} else if (raw.get("Personal details") != null) {
-				Map<String, Object> po = m.convertValue(raw.get("Personal details"), Map.class);
-				raw.putAll(po);
+				try {
+					Map<String, Object> po = m.convertValue(raw.get("Personal details"), Map.class);
+					raw.putAll(po);
+				} catch (Exception e) {
+				}
 			}
-//			logger.info(raw.toString());
-			ret.setPhoto(raw.get("image").toString());
-			ret.setDateOfBirth(parseDate(raw.get("Born").toString()));
-			ret.setAge(getAge(raw.get("Born").toString()));
-			if (ret.getAge() == -1) {
-				ret.setAge(getAge(raw.get("Died").toString()));
-				ret.setDateOfDeath(parseDate(raw.get("Died").toString()));
+			// logger.info(raw.toString());
+			try {
+				ret.setPhoto(raw.get("image").toString());
+			} catch (Exception e) {
+			}
+			try {
+				ret.setDateOfBirth(parseDate(raw.get("Born").toString()));
+			} catch (Exception e) {
+			}
+			try {
+				ret.setAge(getAge(raw.get("Born").toString()));
+			} catch (Exception e) {
+			}
+			try {
+				if (ret.getAge() == -1) {
+					ret.setAge(getAge(raw.get("Died").toString()));
+					ret.setDateOfDeath(parseDate(raw.get("Died").toString()));
+				}
+			} catch (Exception e) {
 			}
 			ret.setName(info.getTitle());
 			try {

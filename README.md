@@ -42,11 +42,11 @@ The application can be configured by supplying the following variables in proper
 | GoogleScraper.enabled | Enable or Disable Google Scraper | true/false |
 | GithubAPI.enabled | Enable or Disable Github API client | true/false |
 | PersonExtractor.enabled | Enable or Disable Person Knowledge Engine | true/false |
-| <EndpointClassName>.enabled | Enable or Disable DataEndpoint | true/false |
+| &lt;EndpointClassName&gt;.enabled | Enable or Disable DataEndpoint | true/false |
 | titlediff_threshold | Threshold of difference in found title and queried title | 0 - MAX_INT |
 | infofetch_batchsize | Batch size to process the names | 1 - MAX_INT |
 
-<EndpointClassName>.enabled default value is true
+&lt;EdpointClassName&gt;.enabled default value is true
 
 Properties file:
 - src/main/resources/application.properties : Default profile (for development only)
@@ -69,7 +69,7 @@ $ java -Dspring.profiles.active=prod -jar target/infodb-0.0.1-SNAPSHOT.jar
 
 In order to override these properties during runtime write the properties in a file and provide the relative path of the file as below
 ```sh
-$ java -Dspring.config.location=<relative/path/to/application.properties> -jar target/infodb-0.0.1-SNAPSHOT.jar
+$ java -Dspring.config.location=&lt;relative/path/to/application.properties&gt; -jar target/infodb-0.0.1-SNAPSHOT.jar
 ```
 
 
@@ -86,7 +86,7 @@ GET     /details/person
             raw data and interpreted data as json
         Response Format: 
             {
-                "key": "<Requested query string>"
+                "key": "&lt;Requested query string&gt;"
                 "data": [Array of raw data]
                 "info": [Array of interpreted information]
             }
@@ -102,7 +102,7 @@ POST    /details/multiple
             2       Stephen Hawkings    1
             ...
             ...
-            <index> <Name>              <Number of sources>
+            &lt;index&gt; <Name>              <Number of sources>
 ```
 
 ### Test

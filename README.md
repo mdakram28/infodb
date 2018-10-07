@@ -1,4 +1,4 @@
-# InfoDB
+# InfoDB(Knowledge graph api)
 
 [![Build Status](https://travis-ci.org/mdakram28/infodb.svg?branch=master)](https://travis-ci.org/mdakram28/infodb)
 
